@@ -9,5 +9,5 @@ jobs:
 
     - name: Make copy of my_file.json
       run: |
-        chmod u+x "${GITHUB_WORKSPACE}/copyfile.sh"
-        bash "${GITHUB_WORKSPACE}/copyfile.sh"
+        chmod u+x "${GITHUB_WORKSPACE}/files/copyfile.sh"
+        bash "${GITHUB_WORKSPACE}/files/copyfile.sh"
