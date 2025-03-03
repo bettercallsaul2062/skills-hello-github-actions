@@ -1,0 +1,13 @@
+name: Copy test.txt to stuff subdirectory
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  run:
+    runs-on: [ubuntu-latest]
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Make copy of my_file.json
+      run: |
+        chmod u+x "${GITHUB_WORKSPACE}/copyfile.sh"
+        bash "${GITHUB_WORKSPACE}/copyfile.sh"
