@@ -7,7 +7,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Make copy of my_file.json
+    - name: Make copy of test.txt
       run: |
         chmod u+x "${GITHUB_WORKSPACE}/files/copyfile.sh"
         bash "${GITHUB_WORKSPACE}/files/copyfile.sh"
