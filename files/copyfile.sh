@@ -1,2 +1,2 @@
 #!/bin/bash
-cp files/test.txt stuff/test.txt
+cp files/test.txt /stuff/test.txt
