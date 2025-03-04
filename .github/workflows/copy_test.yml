@@ -1,4 +1,4 @@
-name: Copy test.txt to stuff subdirectory
+name: Simple File Copy
 on: [push, pull_request, workflow_dispatch]
 jobs:
   run:
